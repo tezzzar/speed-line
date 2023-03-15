@@ -178,6 +178,7 @@ nav {
   height: 55px;
   background-color: #29727e;
   border-bottom: 1px solid white;
+  min-width: 100rem;
 }
 
 .site-nav {
@@ -200,7 +201,7 @@ nav {
 }
 .site-nav a:hover,
 .site-nav li:hover {
-  background-color: #f2902d;
+  background-color: #1b535d;
 }
 .site-nav a:hover .site-nav_submenu,
 .site-nav li:hover .site-nav_submenu {
@@ -214,4 +215,5 @@ nav {
   top: 195px;
   left: 180px;
   background-color: #29727e;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

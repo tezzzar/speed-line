@@ -173,6 +173,7 @@ nav {
   height: 55px;
   background-color: #29727e;
   border-bottom: 1px solid white;
+  min-width: 100rem;
 }
 .site-nav {
   display: flex;
@@ -193,7 +194,7 @@ nav {
   }
   a:hover,
   li:hover {
-    background-color: #f2902d;
+    background-color: #1b535d;
     .site-nav_submenu {
       display: block;
     }
@@ -206,5 +207,6 @@ nav {
     top: 195px;
     left: 180px;
     background-color: #29727e;
+    margin: 0 auto;
   }
 }
