@@ -37,13 +37,14 @@
         </div>
         <div class="col-9">
           <form class="search-container" action="#">
-            <div class="select">
-              <select name="search-type">
-                <option value="name">Пошук по назві</option>
-                <option value="part-number">Пошук по номеру запчастини</option>
-                <option value="article">Пошук по артикулу</option>
-              </select>
-            </div>
+            <ul class="menu-sort">
+              <li id="sort-button"><a href="">Пошук за номером запчастини<span class="arrow"></span></a>
+                <ul class="submenu-sort">
+                  <li><a href="">Пошук за VIN-кодом</a></li>
+                  <li><a href="">Пошук за назвою автомобіля</a></li>
+                </ul>
+              </li>
+            </ul>
             <div class="input">
               <input type="text" placeholder="Введіть запит для пошуку">
               <button type="submit"></button>
@@ -58,7 +59,46 @@
       </div>
     </div>
   </header>
-  <nav></nav>
+  <nav>
+    <div class="container">
+      <div class="row">
+        <ul class="site-nav">
+          <li>
+            <a href="#">Шини</a>
+            <ul class="site-nav_submenu">
+              <li><a href="#">Літні шини</a></li>
+              <li><a href="#">Всесезонні шини</a></li>
+              <li><a href="#">Зимові шини</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Диски</a>
+          </li>
+          <li>
+            <a href="#">Масла</a>
+          </li>
+          <li>
+            <a href="#">Автохімія</a>
+          </li>
+          <li>
+            <a href="#">Тюнінг</a>
+          </li>
+          <li>
+            <a href="#">Акумулятори</a>
+          </li>
+          <li>
+            <a href="#">Оптика</a>
+          </li>
+          <li>
+            <a href="#">Електроніка</a>
+          </li>
+          <li>
+            <a href="#">Весь каталог</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <section></section>
   <main></main>
   <footer></footer>
