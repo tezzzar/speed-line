@@ -58,13 +58,12 @@ header {
 
 .user-office {
   background: url(../img/user-ico.svg) left center no-repeat;
-  padding-left: 25px;
+  padding-left: 30px;
   max-width: 181px;
 }
 .user-office a {
   text-decoration: none;
   color: white;
-  margin-right: 25px;
 }
 
 .logo {
@@ -86,39 +85,65 @@ header {
   justify-content: space-between;
 }
 .site-header .menu-sort {
-  padding: 5px;
+  padding: 0 5px;
   font-size: 16px;
   border: none;
   background-color: #03727e;
   color: #90c1c6;
   height: 40px;
   z-index: 10;
+  position: relative;
+  display: block;
 }
 .site-header .menu-sort a {
   text-decoration: none;
   color: #90c1c6;
-  line-height: 30px;
+  padding: 10px;
+  display: block;
+  float: left;
 }
 .site-header .menu-sort .arrow {
   background-image: url(../img/down-arrow-white.png);
   position: relative;
-  top: 1px;
+  top: 3px;
   left: 3px;
-  background-size: 15px;
+  background-size: 18px;
   background-repeat: no-repeat;
   background-position: center;
-  height: 10px;
+  height: 35px;
   display: inline-block;
-  width: 25px;
+  width: 35px;
+  cursor: pointer;
 }
 .site-header .submenu-sort {
   display: none;
+  position: absolute;
+  z-index: 1;
   padding: 5px;
   background-color: #03727e;
   color: #90c1c6;
   margin: auto -5px;
+  min-width: 281px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  left: 639px;
+  top: 110px;
 }
-.site-header .menu-sort:hover .submenu-sort {
+.site-header .submenu-sort li {
+  display: block;
+}
+.site-header .submenu-sort li a {
+  color: #90c1c6;
+  padding: 15px 10px;
+  text-decoration: none;
+  display: block;
+}
+.site-header .menu-sort a:hover {
+  color: orange;
+}
+.site-header .submenu-sort li a:hover {
+  color: orange;
+}
+.site-header .show {
   display: block;
 }
 .site-header .select:focus {
@@ -186,14 +211,14 @@ nav {
   justify-content: space-between;
   flex-wrap: nowrap;
   align-items: center;
-  height: 55px;
+  height: 54px;
 }
 .site-nav a {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
   display: block;
-  line-height: 55px;
+  line-height: 54px;
   padding: 0 41px;
 }
 .site-nav li {
@@ -212,7 +237,7 @@ nav {
   position: absolute;
   width: auto;
   z-index: 10;
-  top: 195px;
+  top: 194px;
   left: 180px;
   background-color: #29727e;
   margin: 0 auto;
