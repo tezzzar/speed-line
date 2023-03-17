@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Quattrocento+Sans:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=PT+Sans:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -249,100 +250,149 @@ nav {
 .slider {
   display: flex;
 }
-.carousel {
+.slider {
   display: flex;
   height: auto;
-}
+  button {
+    .owl-prev,
+    .owl-next {
+      display: block;
+    }
+  }
 
-[class*="pic_owl_"] {
-  height: 440px;
-}
+  [class*="pic_owl_"] {
+    height: 440px;
+  }
 
-.pic_owl_1 {
-  background-color: #000;
-  background-size: cover;
-}
-.pic_owl_2 {
-  background: url(../img/bugatti.jpeg) no-repeat;
-  background-size: cover;
-}
-.pic_owl_3 {
-  background: url(../img/chevrolet.jpeg) no-repeat;
-  background-size: cover;
-}
+  .pic_owl_1 {
+    background-color: #000;
+    background-size: cover;
+  }
+  .pic_owl_2 {
+    background: url(../img/bugatti.jpeg) no-repeat;
+    background-size: cover;
+  }
+  .pic_owl_3 {
+    background: url(../img/chevrolet.jpeg) no-repeat;
+    background-size: cover;
+  }
 
-.owl-dots {
-  position: absolute;
-  right: 431px;
-  top: 403px;
-}
-.owl-nav {
-  position: absolute;
-  z-index: 10;
-  right: 452px;
-  top: 389px;
-  background-color: white;
-  border: 1px solid white;
-  border-radius: 20px;
-}
+  .owl-dots {
+    position: absolute;
+    right: 431px;
+    top: 403px;
+  }
+  .owl-nav {
+    position: absolute;
+    z-index: 10;
+    right: 452px;
+    top: 389px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 20px;
+  }
 
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
-  background: #f3902d;
-}
+  .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background: #f3902d;
+  }
 
-.owl-prev,
-.owl-next {
-  position: absolute;
-  bottom: -30px;
-  display: block;
-  width: 28px;
-  height: 28px;
-  background-color: #fff !important;
-  border-radius: 30px !important;
-  -moz-border-radius: 30px !important;
-  -webkit-border-radius: 30px !important;
-}
+  .owl-prev,
+  .owl-next {
+    position: absolute;
+    bottom: -30px;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-color: #fff !important;
+    border-radius: 30px !important;
+    -moz-border-radius: 30px !important;
+    -webkit-border-radius: 30px !important;
+    font-family: "PT Sans", sans-serif;
+  }
 
-.owl-next span {
-  font-size: 14px;
-}
+  .owl-next span {
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    bottom: 2px;
+    left: 11px;
+    font-size: 30px;
+    position: absolute;
+  }
+  .owl-prev span {
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    bottom: 2px;
+    left: 9px;
+    font-size: 30px;
+    position: absolute;
+  }
 
-.slideshow .owl-next:before {
-  transform: rotate(45deg);
-}
+  .owl-prev span:hover,
+  .owl-next span:hover {
+    color: white;
+  }
 
-.slideshow .owl-prev:before,
-.slideshow .owl-next:before {
-  content: "";
-  display: block;
-  width: 8px;
-  height: 8px;
-  position: absolute;
-  z-index: 15;
-  left: 10px;
-  top: 9px;
-  border-top: 2px solid #000;
-  border-right: 2px solid #000;
-  transform: rotate(220deg);
-}
+  .slideshow .owl-next:before {
+    transform: rotate(45deg);
+  }
 
-.owl-prev {
-  left: -473px;
-}
+  .slideshow .owl-prev:before,
+  .slideshow .owl-next:before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    z-index: 15;
+    left: 10px;
+    top: 9px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(220deg);
+  }
 
-.owl-next {
-  right: -443px;
-}
+  .owl-prev {
+    left: -473px;
+  }
 
-.owl-carousel .item-video {
-  height: 440px;
-}
+  .owl-next {
+    right: -443px;
+  }
 
-.owl-video-play-icon {
-  top: 200px !important;
-}
+  .owl-next:hover,
+  .owl-prev:hover {
+    background-color: #f3902d !important;
+  }
 
-.owl-stage-outer {
-  background-color: #000;
+  .item-video {
+    height: 440px;
+  }
+
+  .owl-video-play-icon {
+    top: 200px !important;
+  }
+
+  .owl-stage-outer {
+    background-color: #000;
+  }
+  .slider_sm_pic {
+    display: flex;
+    height: 440px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-left: 1px solid white;
+  }
+  .pic_sm_pic_1 {
+    background-image: url(../img/jaguar-f-type.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 220px;
+  }
+  .pic_sm_pic_2 {
+    background-image: url(../img/bugatti.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 220px;
+    border-top: 1px solid white;
+  }
 }
