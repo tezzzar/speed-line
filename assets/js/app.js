@@ -23,7 +23,7 @@ $(document).ready(function () {
     items: 1,
     nav: true,
     dots: true,
-    merge: true,
+    // merge: true,
     loop: true,
     margin: 10,
     video: true,

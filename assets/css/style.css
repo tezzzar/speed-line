@@ -261,11 +261,11 @@ nav {
   height: 440px;
 }
 .slider .pic_owl_1 {
-  background-color: #000;
+  background: url(../img/bridgestone_img.png) no-repeat;
   background-size: cover;
 }
 .slider .pic_owl_2 {
-  background: url(../img/bugatti.jpeg) no-repeat;
+  background-color: #000;
   background-size: cover;
 }
 .slider .pic_owl_3 {
@@ -354,6 +354,8 @@ nav {
 }
 .slider .owl-video-play-icon {
   top: 200px !important;
+  position: absolute;
+  z-index: 30;
 }
 .slider .owl-stage-outer {
   background-color: #000;
@@ -377,4 +379,51 @@ nav {
   background-repeat: no-repeat;
   height: 220px;
   border-top: 1px solid white;
+}
+.slider .slider_button,
+.slider .main_slider_text,
+.slider .sm_slider_button_top,
+.slider .sm_slider_text_top,
+.slider .sm_slider_button_button,
+.slider .sm_slider_text_button {
+  position: absolute;
+  z-index: 20;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+.slider .main_slider_text {
+  left: 30px;
+  top: 41px;
+  font-size: 38px;
+  font-family: "PT Sans";
+  color: rgb(255, 255, 255);
+  line-height: 1.263;
+  text-align: left;
+  padding-right: 471px;
+}
+.slider .main_slider_text span {
+  font-weight: bolder;
+}
+.slider .main_slider_text:hover {
+  color: orange;
+}
+.slider .slider_button {
+  width: 190px;
+  height: 50px;
+  left: 30px;
+  top: 294px;
+  font-size: 16px;
+  font-family: "PT Sans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 46px;
+  text-align: center;
+  border: 2px solid white;
+}
+.slider .slider_button:hover {
+  cursor: pointer;
+  color: orange;
+  border: 2px solid orange;
 }/*# sourceMappingURL=style.css.map */
