@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Quattrocento+Sans:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -76,7 +77,7 @@ header {
 .search-container {
   display: flex;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 29px;
   justify-content: end;
 }
 
@@ -118,15 +119,15 @@ header {
 .site-header .submenu-sort {
   display: none;
   position: absolute;
-  z-index: 1;
+  z-index: 10;
   padding: 5px;
   background-color: #03727e;
   color: #90c1c6;
   margin: auto -5px;
   min-width: 281px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 21px 21px 22px -9px rgba(34, 60, 80, 0.29);
   left: 639px;
-  top: 110px;
+  top: 109px;
 }
 .site-header .submenu-sort li {
   display: block;
@@ -241,4 +242,97 @@ nav {
   left: 180px;
   background-color: #29727e;
   margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+}
+
+.carousel {
+  display: flex;
+  height: auto;
+}
+
+[class*=pic_owl_] {
+  height: 440px;
+}
+
+.pic_owl_1 {
+  background: url(../img/jaguar-f-type.jpeg) no-repeat;
+  background-size: cover;
+}
+
+.pic_owl_2 {
+  background: url(../img/bugatti.jpeg) no-repeat;
+  background-size: cover;
+}
+
+.pic_owl_3 {
+  background: url(../img/chevrolet.jpeg) no-repeat;
+  background-size: cover;
+}
+
+.owl-dots {
+  position: absolute;
+  right: 431px;
+  top: 403px;
+}
+
+.owl-nav {
+  position: absolute;
+  z-index: 10;
+  right: 452px;
+  top: 389px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #f3902d;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  bottom: -30px;
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-color: #fff !important;
+  border-radius: 30px !important;
+  -moz-border-radius: 30px !important;
+  -webkit-border-radius: 30px !important;
+}
+
+.owl-next span {
+  font-size: 14px;
+}
+
+.slideshow .owl-next:before {
+  transform: rotate(45deg);
+}
+
+.slideshow .owl-prev:before,
+.slideshow .owl-next:before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  z-index: 15;
+  left: 10px;
+  top: 9px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(220deg);
+}
+
+.owl-prev {
+  left: -473px;
+}
+
+.owl-next {
+  right: -443px;
 }/*# sourceMappingURL=style.css.map */

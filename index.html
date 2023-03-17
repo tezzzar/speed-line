@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/animate.css">
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/media.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
   <title>Speed-line</title>
 </head>
 
@@ -39,14 +40,12 @@
         </div>
         <div class="col-9">
           <form class="search-container" action="#">
-
-            <button onclick="toggleDropdown()" class="menu-sort"><a href="#">Пошук за номером запчастини</a><span
-                class="arrow"></span></button>
+            <button onclick="toggleDropdown()" id="toggle" class="menu-sort"><a href="#">Пошук за номером
+                запчастини</a><span class="arrow"></span></button>
             <ul id="dropdown" class="submenu-sort">
               <li><a href="#">Пошук за VIN-кодом</a></li>
               <li><a href="#">Пошук за назвою автомобіля</a></li>
             </ul>
-
             <div class="input">
               <input type="text" placeholder="Введіть запит для пошуку">
               <button type="submit"></button>
@@ -102,14 +101,20 @@
     </div>
   </nav>
   <section>
-    <div class="owl-carousel">
-
+    <div class="container">
+      <div class="row slider">
+        <div class="owl-carousel owl-theme col-10">
+          <div class="pic_owl_1"><a href="#"></a></div>
+          <div class="pic_owl_2"><a href="#"></a></div>
+          <div class="pic_owl_3"><a href="#"></a></div>
+        </div>
+      </div>
     </div>
   </section>
   <main></main>
   <footer></footer>
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 
