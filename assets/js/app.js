@@ -30,6 +30,25 @@ $(document).ready(function () {
     lazyLoad: true,
     center: true,
     animateOut: "fadeOut",
+    autoplay: true,
+    onInitialized: function () {
+      if ($(".owl-item.active video", this.$element).length) {
+        $(".owl-item.active video", this.$element)[0].play();
+        owl.trigger("stop.owl.autoplay");
+        $(".owl-item.active video", this.$element).on("ended", function () {
+          owl.trigger("play.owl.autoplay");
+        });
+      }
+    },
+    onTranslated: function () {
+      if ($(".owl-item.active video", this.$element).length) {
+        $(".owl-item.active video", this.$element)[0].play();
+        owl.trigger("stop.owl.autoplay");
+        $(".owl-item.active video", this.$element).on("ended", function () {
+          owl.trigger("play.owl.autoplay");
+        });
+      }
+    },
     // navText: ["", ""],
   });
 });
