@@ -259,7 +259,7 @@ nav {
 }
 
 .pic_owl_1 {
-  background: url(../img/jaguar-f-type.jpeg) no-repeat;
+  background-color: #000;
   background-size: cover;
 }
 .pic_owl_2 {
@@ -333,4 +333,16 @@ nav {
 
 .owl-next {
   right: -443px;
+}
+
+.owl-carousel .item-video {
+  height: 440px;
+}
+
+.owl-video-play-icon {
+  top: 200px !important;
+}
+
+.owl-stage-outer {
+  background-color: #000;
 }
