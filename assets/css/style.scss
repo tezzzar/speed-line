@@ -284,8 +284,8 @@ nav {
 
   .owl-dots {
     position: absolute;
-    right: 431px;
-    top: 403px;
+    right: 420px;
+    top: 400px;
   }
   .owl-nav {
     position: absolute;
@@ -374,7 +374,7 @@ nav {
   }
 
   .owl-video-play-icon {
-    top: 200px !important;
+    top: 200px;
     position: absolute;
     z-index: 30;
   }
@@ -490,7 +490,7 @@ nav {
     margin: 35px 0 40px 20px;
   }
   .sm_slider_button_top {
-    margin: 160px 0 0 0px;
+    margin: 165px 0 0 0px;
   }
   [class*="sm_slider_button_"] {
     p {
@@ -560,7 +560,6 @@ nav {
     font-size: 28px;
     font-family: "PT Sans";
     color: rgb(32, 32, 32);
-
     text-transform: uppercase;
     line-height: 1.071;
     text-align: center;
@@ -569,8 +568,94 @@ nav {
     }
   }
   .product-item {
-    // width: 256px;
     height: 512px;
     border: 1px solid black;
+  }
+
+  .owl-dots {
+    position: absolute;
+    right: 96px;
+    top: -72px;
+  }
+  .owl-nav {
+    position: absolute;
+    z-index: 10;
+    right: 438px;
+    top: -85px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 20px;
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background: #f3902d;
+  }
+
+  .owl-prev,
+  .owl-next {
+    position: absolute;
+    bottom: -30px;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-color: #29727e !important;
+    border-radius: 30px !important;
+    -moz-border-radius: 30px !important;
+    -webkit-border-radius: 30px !important;
+    font-family: "PT Sans", sans-serif;
+  }
+
+  .owl-next span {
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    bottom: 2px;
+    left: 11px;
+    font-size: 30px;
+    position: absolute;
+  }
+  .owl-prev span {
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    bottom: 2px;
+    left: 9px;
+    font-size: 30px;
+    position: absolute;
+  }
+
+  .owl-prev span,
+  .owl-next span {
+    color: white;
+  }
+
+  .slideshow .owl-next:before {
+    transform: rotate(45deg);
+  }
+
+  .slideshow .owl-prev:before,
+  .slideshow .owl-next:before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    z-index: 15;
+    left: 10px;
+    top: 9px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(220deg);
+  }
+
+  .owl-prev {
+    left: 369px;
+  }
+
+  .owl-next {
+    right: -443px;
+  }
+
+  .owl-next:hover,
+  .owl-prev:hover {
+    background-color: #f3902d !important;
   }
 }

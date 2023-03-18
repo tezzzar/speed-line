@@ -278,8 +278,8 @@ nav {
 }
 .slider .owl-dots {
   position: absolute;
-  right: 431px;
-  top: 403px;
+  right: 420px;
+  top: 400px;
 }
 .slider .owl-nav {
   position: absolute;
@@ -357,7 +357,7 @@ nav {
   height: 440px;
 }
 .slider .owl-video-play-icon {
-  top: 200px !important;
+  top: 200px;
   position: absolute;
   z-index: 30;
 }
@@ -479,7 +479,7 @@ nav {
   margin: 35px 0 40px 20px;
 }
 .slider .sm_slider_button_top {
-  margin: 160px 0 0 0px;
+  margin: 165px 0 0 0px;
 }
 .slider [class*=sm_slider_button_] p {
   padding-left: 55px;
@@ -551,4 +551,81 @@ nav {
 .catalog-section .product-item {
   height: 512px;
   border: 1px solid black;
+}
+.catalog-section .owl-dots {
+  position: absolute;
+  right: 96px;
+  top: -72px;
+}
+.catalog-section .owl-nav {
+  position: absolute;
+  z-index: 10;
+  right: 438px;
+  top: -85px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 20px;
+}
+.catalog-section .owl-theme .owl-dots .owl-dot.active span,
+.catalog-section .owl-theme .owl-dots .owl-dot:hover span {
+  background: #f3902d;
+}
+.catalog-section .owl-prev,
+.catalog-section .owl-next {
+  position: absolute;
+  bottom: -30px;
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-color: #29727e !important;
+  border-radius: 30px !important;
+  -moz-border-radius: 30px !important;
+  -webkit-border-radius: 30px !important;
+  font-family: "PT Sans", sans-serif;
+}
+.catalog-section .owl-next span {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  bottom: 2px;
+  left: 11px;
+  font-size: 30px;
+  position: absolute;
+}
+.catalog-section .owl-prev span {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  bottom: 2px;
+  left: 9px;
+  font-size: 30px;
+  position: absolute;
+}
+.catalog-section .owl-prev span,
+.catalog-section .owl-next span {
+  color: white;
+}
+.catalog-section .slideshow .owl-next:before {
+  transform: rotate(45deg);
+}
+.catalog-section .slideshow .owl-prev:before,
+.catalog-section .slideshow .owl-next:before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  z-index: 15;
+  left: 10px;
+  top: 9px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(220deg);
+}
+.catalog-section .owl-prev {
+  left: 369px;
+}
+.catalog-section .owl-next {
+  right: -443px;
+}
+.catalog-section .owl-next:hover,
+.catalog-section .owl-prev:hover {
+  background-color: #f3902d !important;
 }/*# sourceMappingURL=style.css.map */

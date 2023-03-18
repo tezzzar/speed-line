@@ -56,9 +56,9 @@ $(document).ready(function () {
     margin: 15, //Отступ от картино если выводите больше 1
     nav: true,
     dots: true,
-    autoplay: true, //Автозапуск слайдера
-    smartSpeed: 2000, //Время движения слайда
-    autoplayTimeout: 4000, //Время смены слайда
+    // autoplay: true, //Автозапуск слайдера
+    // smartSpeed: 2000, //Время движения слайда
+    // autoplayTimeout: 4000, //Время смены слайда
     // responsive: {
     //   0: {
     //     items: 1,
