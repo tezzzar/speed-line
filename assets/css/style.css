@@ -35,6 +35,10 @@ header {
   justify-content: space-between;
 }
 
+.topbar__nav a:hover {
+  color: orange;
+}
+
 .top_menu {
   display: flex;
   margin-left: -25px;
@@ -340,7 +344,7 @@ nav {
   transform: rotate(220deg);
 }
 .slider .owl-prev {
-  left: -473px;
+  left: -471px;
 }
 .slider .owl-next {
   right: -443px;
@@ -368,24 +372,20 @@ nav {
   border-left: 1px solid white;
 }
 .slider .pic_sm_pic_1 {
-  background-image: url(../img/jaguar-f-type.jpeg);
+  background-image: url(../img/sm_banner_top.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 220px;
 }
 .slider .pic_sm_pic_2 {
-  background-image: url(../img/bugatti.jpeg);
+  background-image: url(../img/sm_banner_bottom.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 220px;
   border-top: 1px solid white;
 }
 .slider .slider_button,
-.slider .main_slider_text,
-.slider .sm_slider_button_top,
-.slider .sm_slider_text_top,
-.slider .sm_slider_button_button,
-.slider .sm_slider_text_button {
+.slider .main_slider_text {
   position: absolute;
   z-index: 20;
   text-decoration: none;
@@ -426,4 +426,129 @@ nav {
   cursor: pointer;
   color: orange;
   border: 2px solid orange;
+}
+.slider .sm_slider_text_top {
+  font-size: 18px;
+  font-family: "PT Sans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.667;
+  text-align: left;
+  position: relative;
+  max-width: 270px;
+}
+.slider .sm_slider_button_top,
+.slider .sm_slider_text_top,
+.slider .sm_slider_button_button,
+.slider .sm_slider_text_button {
+  position: absolute;
+  z-index: 20;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  margin: 0 0 0 20px;
+}
+.slider .sm_slider_button_top p,
+.slider .sm_slider_text_top p,
+.slider .sm_slider_button_button p,
+.slider .sm_slider_text_button p {
+  font-size: 14px;
+  font-family: "PT Sans";
+  font-weight: 400;
+}
+.slider .sm_slider_button_top p:hover,
+.slider .sm_slider_text_top p:hover,
+.slider .sm_slider_button_button p:hover,
+.slider .sm_slider_text_button p:hover {
+  color: orange;
+}
+.slider .sm_slider_button_top a:hover,
+.slider .sm_slider_text_top a:hover,
+.slider .sm_slider_button_button a:hover,
+.slider .sm_slider_text_button a:hover {
+  color: orange;
+}
+.slider .sm_slider_button_top span:hover,
+.slider .sm_slider_text_top span:hover,
+.slider .sm_slider_button_button span:hover,
+.slider .sm_slider_text_button span:hover {
+  color: orange;
+}
+.slider .sm_slider_text_top {
+  margin: 35px 0 40px 20px;
+}
+.slider .sm_slider_button_top {
+  margin: 160px 0 0 0px;
+}
+.slider [class*=sm_slider_button_] p {
+  padding-left: 55px;
+  margin-top: 10px;
+}
+.slider [class*=sm_slider_button_] span {
+  background-image: url(../img/arrow_right_black.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+  padding: 0 8px;
+  border: 1px solid black;
+  border-radius: 25px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 23px;
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  bottom: -5px;
+  left: 20px;
+}
+.slider [class*=sm_slider_button_] span:hover ~ p {
+  color: orange;
+}
+.slider [class*=sm_slider_button_] span:hover {
+  background-color: orange;
+  background-image: url(../img/arrow_right_white.png);
+}
+.slider [class*=sm_slider_button_] p:hover span {
+  background-color: orange;
+  background-image: url(../img/arrow_right_white.png);
+}
+.slider .sm_slider_button_top :hover,
+.slider .sm_slider_text_top :hover,
+.slider .sm_slider_button_button :hover,
+.slider .sm_slider_text_button :hover {
+  color: orange;
+}
+.slider .pic_sm_pic_1:hover {
+  color: orange;
+}
+.slider .sm_slider_text_top:hover {
+  color: orange;
+}
+.slider .sm_slider_text_button {
+  top: 455px;
+  max-width: 250px;
+}
+.slider .sm_slider_button_button {
+  position: absolute;
+  top: 580px;
+  margin-left: 0px;
+}
+
+.catalog-section .section-title {
+  margin: 50px 0;
+  text-align: center;
+  font-size: 28px;
+  font-family: "PT Sans";
+  color: rgb(32, 32, 32);
+  text-transform: uppercase;
+  line-height: 1.071;
+  text-align: center;
+}
+.catalog-section .section-title span {
+  font-weight: bold;
+}
+.catalog-section .product-item {
+  height: 512px;
+  border: 1px solid black;
 }/*# sourceMappingURL=style.css.map */

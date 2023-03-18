@@ -19,13 +19,12 @@ document.addEventListener("click", function (event) {
 // SLIDER -------------------------------------------
 
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
+  $("#slider-carousel").owlCarousel({
     items: 1,
     nav: true,
     dots: true,
-    // merge: true,
+    merge: true,
     loop: true,
-    margin: 10,
     video: true,
     lazyLoad: true,
     center: true,
@@ -51,12 +50,25 @@ $(document).ready(function () {
     // },
     // navText: ["", ""],
   });
-});
-
-$(".next_button").click(function () {
-  owl.trigger("next.owl.carousel");
-});
-
-$(".prev_button").click(function () {
-  owl.trigger("prev.owl.carousel");
+  $("#catalog-carousel").owlCarousel({
+    items: 5,
+    loop: true, //Зацикливаем слайдер
+    margin: 15, //Отступ от картино если выводите больше 1
+    nav: true,
+    dots: true,
+    autoplay: true, //Автозапуск слайдера
+    smartSpeed: 2000, //Время движения слайда
+    autoplayTimeout: 4000, //Время смены слайда
+    // responsive: {
+    //   0: {
+    //     items: 1,
+    //   },
+    //   600: {
+    //     items: 2,
+    //   },
+    //   1000: {
+    //     items: 5,
+    //   },
+    // },
+  });
 });

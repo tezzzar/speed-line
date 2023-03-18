@@ -30,6 +30,9 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+.topbar__nav a:hover {
+  color: orange;
+}
 .top_menu {
   display: flex;
   margin-left: -25px;
@@ -354,7 +357,7 @@ nav {
   }
 
   .owl-prev {
-    left: -473px;
+    left: -471px;
   }
 
   .owl-next {
@@ -387,24 +390,21 @@ nav {
     border-left: 1px solid white;
   }
   .pic_sm_pic_1 {
-    background-image: url(../img/jaguar-f-type.jpeg);
+    background-image: url(../img/sm_banner_top.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 220px;
+    // width: 439px;
   }
   .pic_sm_pic_2 {
-    background-image: url(../img/bugatti.jpeg);
+    background-image: url(../img/sm_banner_bottom.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 220px;
     border-top: 1px solid white;
   }
   .slider_button,
-  .main_slider_text,
-  .sm_slider_button_top,
-  .sm_slider_text_top,
-  .sm_slider_button_button,
-  .sm_slider_text_button {
+  .main_slider_text {
     position: absolute;
     z-index: 20;
     text-decoration: none;
@@ -446,5 +446,131 @@ nav {
     cursor: pointer;
     color: orange;
     border: 2px solid orange;
+  }
+
+  .sm_slider_text_top {
+    font-size: 18px;
+    font-family: "PT Sans";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.667;
+    text-align: left;
+    position: relative;
+    max-width: 270px;
+  }
+
+  .sm_slider_button_top,
+  .sm_slider_text_top,
+  .sm_slider_button_button,
+  .sm_slider_text_button {
+    position: absolute;
+    z-index: 20;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    margin: 0 0 0 20px;
+    p {
+      font-size: 14px;
+      font-family: "PT Sans";
+      font-weight: 400;
+    }
+    p:hover {
+      color: orange;
+    }
+    a:hover {
+      color: orange;
+    }
+    span:hover {
+      color: orange;
+    }
+  }
+
+  .sm_slider_text_top {
+    margin: 35px 0 40px 20px;
+  }
+  .sm_slider_button_top {
+    margin: 160px 0 0 0px;
+  }
+  [class*="sm_slider_button_"] {
+    p {
+      padding-left: 55px;
+      margin-top: 10px;
+    }
+  }
+  [class*="sm_slider_button_"] {
+    span {
+      background-image: url(../img/arrow_right_black.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: white;
+      padding: 0 8px;
+      border: 1px solid black;
+      border-radius: 25px;
+      font-family: "DM Sans", sans-serif;
+      font-size: 23px;
+      display: inline-block;
+      width: 23px;
+      height: 23px;
+      position: absolute;
+      bottom: -5px;
+      left: 20px;
+    }
+    span:hover ~ p {
+      color: orange;
+    }
+    span:hover {
+      background-color: orange;
+      background-image: url(../img/arrow_right_white.png);
+    }
+    p:hover span {
+      background-color: orange;
+      background-image: url(../img/arrow_right_white.png);
+    }
+  }
+  .sm_slider_button_top :hover,
+  .sm_slider_text_top :hover,
+  .sm_slider_button_button :hover,
+  .sm_slider_text_button :hover {
+    color: orange;
+  }
+  .pic_sm_pic_1:hover {
+    color: orange;
+  }
+  .sm_slider_text_top:hover {
+    color: orange;
+  }
+  .sm_slider_text_button {
+    top: 455px;
+    max-width: 250px;
+  }
+  .sm_slider_button_button {
+    position: absolute;
+    top: 580px;
+    margin-left: 0px;
+  }
+}
+
+// Catalog --------------------------------------------------------------
+
+.catalog-section {
+  .section-title {
+    margin: 50px 0;
+    text-align: center;
+    font-size: 28px;
+    font-family: "PT Sans";
+    color: rgb(32, 32, 32);
+
+    text-transform: uppercase;
+    line-height: 1.071;
+    text-align: center;
+    span {
+      font-weight: bold;
+    }
+  }
+  .product-item {
+    // width: 256px;
+    height: 512px;
+    border: 1px solid black;
   }
 }
