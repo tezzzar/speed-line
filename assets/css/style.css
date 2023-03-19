@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #e7e7ea;
+}
+
 body a {
   font-family: "PT Sans";
 }
@@ -536,7 +540,7 @@ nav {
 }
 
 .catalog-section .section-title {
-  margin: 50px 0;
+  margin: 50px 0 40px 0;
   text-align: center;
   font-size: 28px;
   font-family: "PT Sans";
@@ -548,20 +552,16 @@ nav {
 .catalog-section .section-title span {
   font-weight: bold;
 }
-.catalog-section .product-item {
-  height: 512px;
-  border: 1px solid black;
-}
 .catalog-section .owl-dots {
   position: absolute;
   right: 96px;
-  top: -72px;
+  top: -65px;
 }
 .catalog-section .owl-nav {
   position: absolute;
   z-index: 10;
   right: 438px;
-  top: -85px;
+  top: -77px;
   border: 1px solid rgba(255, 255, 255, 0);
   border-radius: 20px;
 }
@@ -628,4 +628,304 @@ nav {
 .catalog-section .owl-next:hover,
 .catalog-section .owl-prev:hover {
   background-color: #f3902d !important;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 1px;
+  position: absolute;
+  top: 20px;
+}
+
+[class*=label_] {
+  z-index: 10;
+}
+
+.label_top,
+.label_new,
+.label_discount {
+  position: relative;
+  text-transform: uppercase;
+  padding: 0 10px;
+  font-size: 14px;
+  font-family: "PT Sans";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 2.143;
+  -moz-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+  -webkit-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+  -ms-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+}
+
+.label_top {
+  background-color: #f3902d;
+}
+
+.label_new {
+  background-color: #5597a0;
+}
+
+.label_discount {
+  background-color: #ef482a;
+}
+
+.label_private {
+  background: url(../img/privat_label.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
+}
+
+.label_mono {
+  background: url(../img/mono_label.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
+}
+
+[class*=label_season_] {
+  position: absolute;
+  display: inline-block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  right: 0;
+  top: 10 px;
+  margin: -35px 20px 0 0;
+}
+
+.label_season_hot {
+  background: url(../img/summer-ico.png);
+}
+
+.label_season_cold {
+  background: url(../img/cold.png);
+}
+
+.label_season_demi {
+  background: url(../img/coldhot.png);
+}
+
+.catalog-item__photo {
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  width: 150px;
+  margin: 35px auto 0 auto;
+}
+
+.product_info {
+  font-size: 18px;
+  font-family: "PT Sans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.333;
+  text-align: center;
+  margin-top: 25px;
+  -moz-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+  -webkit-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+  -ms-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+}
+.product_info a {
+  text-decoration: none;
+  color: #000;
+}
+.product_info a:hover {
+  color: #f3902d;
+}
+
+.product_info:hover {
+  color: #f3902d;
+}
+
+.info-inner {
+  font-size: 14px;
+  font-family: "PT Sans";
+  color: rgb(85, 85, 85);
+  line-height: 2.143;
+  text-align: center;
+  -moz-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+  -webkit-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+  -ms-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+}
+
+.product-item {
+  height: 512px;
+  padding: 10px 20px 20px 20px;
+  background-color: #fff;
+  margin: 10px 0;
+}
+
+#prod_it_1 .catalog-item__photo {
+  background: url(../img/products/GoodYear_Ultra_Grip.png);
+}
+
+#prod_it_2 .catalog-item__photo {
+  background-image: url(../img/products/oil_mobil_ultra.png);
+}
+
+#prod_it_3 .catalog-item__photo {
+  background-image: url(../img/products/bridgestone_blizzak.png);
+}
+
+#prod_it_4 .catalog-item__photo {
+  background-image: url(../img/products/goodyear_eagle_ultragrip_gw.png);
+}
+
+#prod_it_5 .catalog-item__photo {
+  background-image: url(../img/products/antifreez.png);
+}
+
+#prod_it_6 .catalog-item__photo {
+  background-image: url(../img/products/oil_mobil_ultra.png);
+}
+
+.product-item:hover {
+  box-shadow: 0px 0px 12px 2px rgba(34, 60, 80, 0.37);
+  cursor: pointer;
+}
+
+.reviews__stars {
+  margin-left: 20px;
+}
+
+.star_icon {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  display: block;
+  float: left;
+  margin-top: 6px;
+}
+
+.star_full {
+  background: url(../img/star_full.png);
+}
+
+.star_half {
+  background: url(../img/star_half.png);
+}
+
+.star_empty {
+  background: url(../img/star_empty.png);
+}
+
+.product__reviews {
+  text-align: center;
+  position: relative;
+}
+.product__reviews a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "PT Sans";
+  color: rgb(85, 85, 85);
+  line-height: 2.143;
+  text-align: center;
+  -moz-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+  -webkit-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+  -ms-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+}
+.product__reviews span:hover {
+  color: #f3902d;
+}
+
+.catalog-item__prices {
+  display: flex;
+  justify-content: center;
+}
+
+.product__price {
+  font-size: 24px;
+  font-family: "PT Sans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: center;
+  -moz-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+  -webkit-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+  -ms-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+}
+.product__price .unit {
+  font-size: 18px;
+  font-family: "PT Sans";
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+}
+
+.catalog-stock__status {
+  font-size: 14px;
+  font-family: "PT Sans";
+  color: rgb(85, 151, 161);
+  line-height: 2.143;
+  text-align: center;
+  -moz-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+  -webkit-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+  -ms-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+  margin-bottom: 5px;
+}
+
+.catalog-item__buy {
+  font-size: 14px;
+  font-family: "PT Sans";
+  line-height: 2.143;
+  text-align: center;
+  -moz-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+  -webkit-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+  -ms-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+  display: block;
+  text-align: center;
+  height: 50px;
+  font-weight: bold;
+  background-color: #03727e;
+  background-image: url(../img/cart-small-ico.svg);
+  background-position: 30% center;
+  background-repeat: no-repeat;
+  border: none;
+  line-height: 50px;
+}
+.catalog-item__buy a {
+  margin-left: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.catalog-item__buy:hover {
+  background-color: #f3902d;
+}
+
+.price_old {
+  font-size: 16px;
+  font-family: "PT Sans";
+  color: rgb(136, 136, 136);
+  font-weight: bold;
+  text-decoration: line-through;
+  line-height: 1.875;
+  text-align: center;
+  -moz-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+  -webkit-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+  -ms-transform: matrix(1.0004426737, 0, 0, 1, 0, 0);
+}
+.price_old .unit {
+  font-size: 16px;
+  font-family: "PT Sans";
+  color: rgb(136, 136, 136);
+  font-weight: bold;
+  text-decoration: line-through;
+  line-height: 1.875;
+  text-align: center;
+}
+
+.price_new {
+  color: #ef482a;
 }/*# sourceMappingURL=style.css.map */
