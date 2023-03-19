@@ -30,6 +30,7 @@ $(document).ready(function () {
     center: true,
     animateOut: "fadeOut",
     // autoplay: true,
+    // autoplayTimeout: 7500, //Время смены слайда
     // onInitialized: function () {
     //   if ($(".owl-item.active video", this.$element).length) {
     //     $(".owl-item.active video", this.$element)[0].play();
@@ -48,7 +49,6 @@ $(document).ready(function () {
     //     });
     //   }
     // },
-    // navText: ["", ""],
   });
   $(".catalog-carousel").owlCarousel({
     items: 5,
