@@ -556,20 +556,6 @@ nav {
 
 // Catalog --------------------------------------------------------------
 .catalog-section {
-  .section-title {
-    margin: 50px 0 40px 0;
-    text-align: center;
-    font-size: 28px;
-    font-family: "PT Sans";
-    color: rgb(32, 32, 32);
-    text-transform: uppercase;
-    line-height: 1.071;
-    text-align: center;
-    span {
-      font-weight: bold;
-    }
-  }
-
   .owl-dots {
     position: absolute;
     right: 96px;
@@ -657,7 +643,27 @@ nav {
     background-color: #f3902d !important;
   }
 }
-
+.section-title {
+  margin: 50px 0 40px 0;
+  text-align: center;
+  font-size: 28px;
+  font-family: "PT Sans";
+  color: rgb(32, 32, 32);
+  text-transform: uppercase;
+  line-height: 1.071;
+  text-align: center;
+  span {
+    font-weight: bold;
+  }
+}
+.catalog-section_bottom {
+  .section-title {
+    margin: 45px 0 40px 0;
+  }
+}
+.section-title_news {
+  margin: 45px 0 55px 0;
+}
 .label {
   display: flex;
   flex-direction: column;
@@ -784,32 +790,32 @@ nav {
   background-color: #fff;
   margin: 10px 0;
 }
-#prod_it_1 {
+.product-item_1 {
   .catalog-item__photo {
     background: url(../img/products/GoodYear_Ultra_Grip.png);
   }
 }
-#prod_it_2 {
+.product-item_2 {
   .catalog-item__photo {
     background-image: url(../img/products/oil_mobil_ultra.png);
   }
 }
-#prod_it_3 {
+.product-item_3 {
   .catalog-item__photo {
     background-image: url(../img/products/bridgestone_blizzak.png);
   }
 }
-#prod_it_4 {
+.product-item_4 {
   .catalog-item__photo {
     background-image: url(../img/products/goodyear_eagle_ultragrip_gw.png);
   }
 }
-#prod_it_5 {
+.product-item_5 {
   .catalog-item__photo {
     background-image: url(../img/products/antifreez.png);
   }
 }
-#prod_it_6 {
+.product-item_6 {
   .catalog-item__photo {
     background-image: url(../img/products/oil_mobil_ultra.png);
   }
@@ -946,4 +952,98 @@ nav {
 }
 .price_new {
   color: #ef482a;
+}
+
+// Info & News ----------------------------------------------------------
+
+.info_news {
+  display: flex;
+  gap: 30px;
+}
+
+.info_block_photo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 180px;
+}
+
+.info_block_1 {
+  .info_block_photo {
+    background-image: url(../img/info/samurai.png);
+  }
+}
+.info_block_2 {
+  .info_block_photo {
+    background-image: url(../img/info/nokian_hakka_black.png);
+  }
+}
+.info_block_3 {
+  .info_block_photo {
+    background-image: url(../img/info/liqui_molly.png);
+  }
+}
+
+.info_block_text:hover {
+  color: #f3902d;
+  .info_block_text_button span {
+    background-color: #f3902d;
+  }
+  .info_block_text_button p {
+    color: #f3902d;
+  }
+}
+
+.info_block_text {
+  font-family: "PT Sans";
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+  padding: 30px;
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.333;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.333;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+  .info_block_text_button {
+    text-decoration: none;
+    p {
+      font-size: 14px;
+      font-family: "PT Sans";
+      color: rgb(3, 114, 126);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 2.143;
+      padding-top: 30px;
+      padding-bottom: 0;
+    }
+    span {
+      background-image: url(../img/arrow_right_white.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-left: 10px;
+      border-radius: 25px;
+      font-family: "DM Sans", sans-serif;
+      font-size: 23px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      color: #fff;
+      background-color: rgb(3, 114, 126);
+      position: relative;
+      top: 5px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.info_block:hover {
+  cursor: pointer;
 }

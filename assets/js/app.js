@@ -50,7 +50,7 @@ $(document).ready(function () {
     // },
     // navText: ["", ""],
   });
-  $("#catalog-carousel").owlCarousel({
+  $(".catalog-carousel").owlCarousel({
     items: 5,
     loop: true, //Зацикливаем слайдер
     margin: 15, //Отступ от картино если выводите больше 1
