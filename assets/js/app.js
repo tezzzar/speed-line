@@ -27,8 +27,10 @@ $(document).ready(function () {
     loop: true,
     video: true,
     lazyLoad: true,
-    center: true,
+    // center: true,
+    // autoWidth: true,
     animateOut: "fadeOut",
+
     // autoplay: true,
     // autoplayTimeout: 7500, //Время смены слайда
     // onInitialized: function () {

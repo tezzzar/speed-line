@@ -6,6 +6,7 @@
 
 body {
   background-color: #e7e7ea;
+  min-width: 100rem;
 }
 
 body a {
@@ -264,10 +265,6 @@ nav {
 
 .slider {
   display: flex;
-}
-
-.slider {
-  display: flex;
   height: auto;
 }
 .slider button .owl-prev,
@@ -378,9 +375,6 @@ nav {
   background-color: #000;
 }
 .slider .slider_sm_pic {
-  display: flex;
-  height: 440px;
-  flex-wrap: wrap;
   flex-direction: column;
   border-left: 1px solid white;
 }
@@ -388,13 +382,13 @@ nav {
   background-image: url(../img/sm_banner_top.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 220px;
+  height: 50%;
 }
 .slider .pic_sm_pic_2 {
   background-image: url(../img/sm_banner_bottom.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 220px;
+  height: 50%;
   border-top: 1px solid white;
 }
 .slider .slider_button,
@@ -449,7 +443,7 @@ nav {
   line-height: 1.667;
   text-align: left;
   position: relative;
-  max-width: 270px;
+  width: 270px;
 }
 .slider .sm_slider_button_top,
 .slider .sm_slider_text_top,
@@ -540,7 +534,7 @@ nav {
 }
 .slider .sm_slider_text_button {
   top: 455px;
-  max-width: 250px;
+  width: 250px;
 }
 .slider .sm_slider_button_button {
   position: absolute;
@@ -1038,6 +1032,7 @@ nav {
 
 footer {
   background-color: #210708;
+  min-width: 100rem;
 }
 
 .site_footer {

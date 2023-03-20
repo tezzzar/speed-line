@@ -6,6 +6,7 @@
 }
 body {
   background-color: #e7e7ea;
+  min-width: 100rem;
 }
 body a {
   font-family: "PT Sans";
@@ -267,9 +268,6 @@ nav {
 
 .slider {
   display: flex;
-}
-.slider {
-  display: flex;
   height: auto;
   button {
     .owl-prev,
@@ -398,9 +396,9 @@ nav {
     background-color: #000;
   }
   .slider_sm_pic {
-    display: flex;
-    height: 440px;
-    flex-wrap: wrap;
+    // display: flex;
+    // height: 440px;
+    // flex-wrap: wrap;
     flex-direction: column;
     border-left: 1px solid white;
   }
@@ -408,14 +406,13 @@ nav {
     background-image: url(../img/sm_banner_top.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 220px;
-    // width: 439px;
+    height: 50%;
   }
   .pic_sm_pic_2 {
     background-image: url(../img/sm_banner_bottom.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 220px;
+    height: 50%;
     border-top: 1px solid white;
   }
   .slider_button,
@@ -472,7 +469,7 @@ nav {
     line-height: 1.667;
     text-align: left;
     position: relative;
-    max-width: 270px;
+    width: 270px;
   }
 
   .sm_slider_button_top,
@@ -507,13 +504,12 @@ nav {
   .sm_slider_button_top {
     margin: 165px 0 0 0px;
   }
+
   [class*="sm_slider_button_"] {
     p {
       padding-left: 55px;
       margin-top: 10px;
     }
-  }
-  [class*="sm_slider_button_"] {
     span {
       background-image: url(../img/arrow_right_black.png);
       background-size: cover;
@@ -557,7 +553,7 @@ nav {
   }
   .sm_slider_text_button {
     top: 455px;
-    max-width: 250px;
+    width: 250px;
   }
   .sm_slider_button_button {
     position: absolute;
@@ -1064,6 +1060,7 @@ nav {
 
 footer {
   background-color: #210708;
+  min-width: 100rem;
 }
 .site_footer {
   font-family: "PT Sans";
