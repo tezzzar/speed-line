@@ -123,11 +123,11 @@ header {
     background-color: #03727e;
     color: #90c1c6;
     margin: auto -5px;
-    min-width: 281px;
+    min-width: 280x;
     -webkit-box-shadow: 21px 21px 22px -9px rgba(34, 60, 80, 0.29);
     -moz-box-shadow: 21px 21px 22px -9px rgba(34, 60, 80, 0.29);
     box-shadow: 21px 21px 22px -9px rgba(34, 60, 80, 0.29);
-    left: 639px;
+    left: 632px;
     top: 109px;
   }
 
@@ -245,7 +245,7 @@ nav {
     width: auto;
     z-index: 10;
     top: 194px;
-    left: 180px;
+    left: 172px;
     background-color: #29727e;
     margin: 0 auto;
   }
@@ -1046,4 +1046,186 @@ nav {
 
 .info_block:hover {
   cursor: pointer;
+}
+
+// Footer -----------------------------------------------------------
+
+footer {
+  background-color: #210708;
+}
+.site_footer {
+  font-family: "PT Sans";
+  margin-top: 95px;
+  padding: 55px 0;
+  display: flex;
+  gap: 30px;
+}
+
+.site_footer_logo {
+  a {
+    text-decoration: none;
+  }
+  p {
+    padding-top: 30px;
+    font-size: 13px;
+    font-family: "PT Sans";
+    color: rgb(136, 136, 136);
+    line-height: 1.2;
+  }
+}
+
+.site_footer_nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  a:hover {
+    cursor: pointer;
+    color: #f3902d;
+  }
+}
+
+.site_footer_shedule {
+  font-size: 18px;
+  font-family: "PT Sans";
+  color: rgb(207, 207, 207);
+  line-height: 1.667;
+  text-align: left;
+  span {
+    display: inline-block;
+    background: url(../img/clock_footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    padding-right: 10px;
+  }
+  p:nth-child(1) {
+    padding-left: 0px;
+  }
+  p {
+    padding-left: 40px;
+    padding-bottom: 10px;
+  }
+}
+
+.site_footer_support {
+  font-size: 18px;
+  font-family: "PT Sans";
+  line-height: 1.667;
+  text-align: left;
+  color: #fff;
+  span {
+    background-color: #000;
+    display: inline-block;
+    background: url(../img/phone_footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    padding-right: 10px;
+  }
+  p:first-of-type {
+    color: rgb(207, 207, 207);
+  }
+  p {
+    padding-left: 40px;
+    padding-bottom: 10px;
+  }
+}
+
+.site_footer_social {
+  padding-right: 0px;
+  .footer_mail_button {
+    border: 2px solid #68858f;
+    a {
+      display: block;
+      font-size: 16px;
+      font-family: "PT Sans";
+      color: rgb(85, 151, 161);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.875;
+      text-decoration: none;
+      padding: 10px 0;
+      text-align: center;
+    }
+    span {
+      background: url(../img/footer_mail.blue.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 15px;
+      display: inline-block;
+      margin-right: 15px;
+    }
+  }
+  .footer_mail_button:hover {
+    border-color: #f3902d;
+    a {
+      color: #f3902d;
+    }
+    span {
+      background: url(../img/footer_mail_orange.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+  p {
+    padding: 30px 0 20px 0;
+    color: #cfcfcf;
+  }
+  .social_icons {
+    display: flex;
+    gap: 25px;
+    a {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .twitter_icon {
+    background: url(../img/twitter_icon_white.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .facebook_icon {
+    background: url(../img/facebook_icon_white.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .instagramm_icon {
+    background: url(../img/instagram_icon_white.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .youtube_icon {
+    background: url(../img/youtube_icon_white.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .twitter_icon:hover {
+    background: url(../img/twitter_icon_orange.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .facebook_icon:hover {
+    background: url(../img/facebook_icon_orange.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .instagramm_icon:hover {
+    background: url(../img/instagram_icon_orange.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .youtube_icon:hover {
+    background: url(../img/youtube_icon_orange.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
