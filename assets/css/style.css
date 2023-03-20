@@ -240,6 +240,7 @@ nav {
 }
 .site-nav li {
   list-style-type: none;
+  white-space: nowrap;
 }
 .site-nav a:hover,
 .site-nav li:hover {
