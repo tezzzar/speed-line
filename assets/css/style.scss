@@ -75,10 +75,10 @@ header {
 // Search Form -------------------------------------------------------------------
 
 .search-container {
-  display: flex;
-  align-items: center;
+  // display: flex;
   padding-top: 29px;
-  justify-content: end;
+  // justify-content: end;
+  // align-items: flex-start;
 }
 
 .site-header {
@@ -94,6 +94,8 @@ header {
     z-index: 10;
     position: relative;
     display: block;
+    float: left;
+    left: 163px;
     a {
       text-decoration: none;
       color: #90c1c6;
@@ -114,21 +116,24 @@ header {
       width: 35px;
       cursor: pointer;
     }
+    .arrow:hover .menu-sort a {
+      color: #f3902d;
+    }
   }
   .submenu-sort {
     display: none;
-    position: absolute;
+    position: relative;
     z-index: 10;
     padding: 5px;
     background-color: #03727e;
     color: #90c1c6;
     margin: auto -5px;
-    min-width: 280x;
+    max-width: 281px;
     -webkit-box-shadow: 21px 21px 22px -9px rgba(34, 60, 80, 0.29);
     -moz-box-shadow: 21px 21px 22px -9px rgba(34, 60, 80, 0.29);
     box-shadow: 21px 21px 22px -9px rgba(34, 60, 80, 0.29);
-    left: 632px;
-    top: 109px;
+    left: 168px;
+    top: -15px;
   }
 
   .submenu-sort li {
@@ -142,7 +147,7 @@ header {
     display: block;
   }
 
-  .menu-sort a:hover {
+  .menu-sort:hover a {
     color: orange;
   }
   .submenu-sort li a:hover {
@@ -157,8 +162,10 @@ header {
     outline: none;
   }
   .input {
-    display: flex;
-    align-items: center;
+    position: relative;
+    top: -14px;
+    left: 0px;
+    text-align: end;
   }
   .input input[type="text"] {
     padding: 6px;
@@ -181,6 +188,9 @@ header {
     border: none;
     background: url(../img/search-button_small.svg) center center no-repeat;
     background-color: #05535d;
+    position: relative;
+    top: 14px;
+    left: -4px;
   }
   .input button[type="submit"]:hover {
     cursor: pointer;
@@ -235,6 +245,7 @@ nav {
   a:hover,
   li:hover {
     background-color: #1b535d;
+    position: relative;
     .site-nav_submenu {
       display: block;
     }
@@ -244,8 +255,8 @@ nav {
     position: absolute;
     width: auto;
     z-index: 10;
-    top: 194px;
-    left: 172px;
+    top: 54px;
+    left: 0px;
     background-color: #29727e;
     margin: 0 auto;
   }

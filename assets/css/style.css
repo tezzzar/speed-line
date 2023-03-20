@@ -84,10 +84,7 @@ header {
 }
 
 .search-container {
-  display: flex;
-  align-items: center;
   padding-top: 29px;
-  justify-content: end;
 }
 
 .site-header {
@@ -104,6 +101,8 @@ header {
   z-index: 10;
   position: relative;
   display: block;
+  float: left;
+  left: 163px;
 }
 .site-header .menu-sort a {
   text-decoration: none;
@@ -125,18 +124,21 @@ header {
   width: 35px;
   cursor: pointer;
 }
+.site-header .menu-sort .arrow:hover .menu-sort a {
+  color: #f3902d;
+}
 .site-header .submenu-sort {
   display: none;
-  position: absolute;
+  position: relative;
   z-index: 10;
   padding: 5px;
   background-color: #03727e;
   color: #90c1c6;
   margin: auto -5px;
-  min-width: 280x;
+  max-width: 281px;
   box-shadow: 21px 21px 22px -9px rgba(34, 60, 80, 0.29);
-  left: 632px;
-  top: 109px;
+  left: 168px;
+  top: -15px;
 }
 .site-header .submenu-sort li {
   display: block;
@@ -147,7 +149,7 @@ header {
   text-decoration: none;
   display: block;
 }
-.site-header .menu-sort a:hover {
+.site-header .menu-sort:hover a {
   color: orange;
 }
 .site-header .submenu-sort li a:hover {
@@ -160,8 +162,10 @@ header {
   outline: none;
 }
 .site-header .input {
-  display: flex;
-  align-items: center;
+  position: relative;
+  top: -14px;
+  left: 0px;
+  text-align: end;
 }
 .site-header .input input[type=text] {
   padding: 6px;
@@ -184,6 +188,9 @@ header {
   border: none;
   background: url(../img/search-button_small.svg) center center no-repeat;
   background-color: #05535d;
+  position: relative;
+  top: 14px;
+  left: -4px;
 }
 .site-header .input button[type=submit]:hover {
   cursor: pointer;
@@ -237,6 +244,7 @@ nav {
 .site-nav a:hover,
 .site-nav li:hover {
   background-color: #1b535d;
+  position: relative;
 }
 .site-nav a:hover .site-nav_submenu,
 .site-nav li:hover .site-nav_submenu {
@@ -247,8 +255,8 @@ nav {
   position: absolute;
   width: auto;
   z-index: 10;
-  top: 194px;
-  left: 172px;
+  top: 54px;
+  left: 0px;
   background-color: #29727e;
   margin: 0 auto;
 }
