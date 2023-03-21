@@ -74,3 +74,25 @@ $(document).ready(function () {
     // },
   });
 });
+
+// Burger menu --------------------------------------------
+
+let menuBtn = document.querySelector(".menu-btn");
+let burgerMenu = document.querySelector(".burger-menu");
+let burgerSubMenu = document.querySelector(".burger_menu_submenu");
+let burgMenuItem_1 = document.getElementById("burg_menu_1");
+
+menuBtn.addEventListener("click", function () {
+  menuBtn.classList.toggle("active");
+  burgerMenu.classList.toggle("active");
+});
+burgMenuItem_1.addEventListener("click", function () {
+  burgerSubMenu.classList.toggle("active");
+});
+
+$(document).ready(function () {
+  $(burgMenuItem_1).click(function (e) {
+    e.preventDefault();
+    $(this).children(burgerSubMenu).slideToggle();
+  });
+});

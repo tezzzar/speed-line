@@ -24,4 +24,24 @@
 
 .col-10 {
   width: 66.6666667%;
+}
+
+@media (max-width: 768px) {
+  .site-nav {
+    display: none !important;
+  }
+  .menu-btn {
+    display: inline-block !important;
+  }
+  .search-container {
+    padding-top: 107px !important;
+    position: relative;
+    margin-right: 0px;
+    left: 277px;
+  }
+}
+@media (min-width: 769px) {
+  .burger-menu {
+    display: none;
+  }
 }/*# sourceMappingURL=media.css.map */

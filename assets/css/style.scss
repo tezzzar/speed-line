@@ -268,7 +268,7 @@ nav {
 
 .slider {
   display: flex;
-  height: auto;
+  gap: 1px;
   button {
     .owl-prev,
     .owl-next {
@@ -396,11 +396,9 @@ nav {
     background-color: #000;
   }
   .slider_sm_pic {
-    // display: flex;
-    // height: 440px;
-    // flex-wrap: wrap;
+    display: flex;
     flex-direction: column;
-    border-left: 1px solid white;
+    gap: 1px;
   }
   .pic_sm_pic_1 {
     background-image: url(../img/sm_banner_top.png);
@@ -413,7 +411,6 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
     height: 50%;
-    border-top: 1px solid white;
   }
   .slider_button,
   .main_slider_text {
@@ -1237,4 +1234,83 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
   }
+}
+
+// Burger menu -----------------------------------------------
+
+/* Гамбургер иконка */
+.menu-btn {
+  width: 51px;
+  height: 51px;
+  position: relative;
+  z-index: 30;
+  overflow: hidden;
+  display: none;
+}
+
+.menu-btn span {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  transition: all 0.5s;
+}
+
+.menu-btn span:nth-of-type(2) {
+  top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+  top: calc(50% + 5px);
+}
+
+.menu-btn.active span:nth-of-type(1) {
+  display: none;
+}
+.menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+}
+.menu-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+.burger-menu {
+  position: sticky;
+  width: 20%;
+  height: 100%;
+  padding: 15px 0 15px 15px;
+  background: #29727d;
+  transform: translateX(-140%);
+  transition: transform 0.5s;
+  z-index: 25;
+  text-transform: uppercase;
+  margin-top: 0.8px;
+}
+
+.burger-menu.active {
+  transform: translateX(0);
+}
+
+.burger-menu li {
+  list-style-type: none;
+  text-decoration: none;
+}
+.burger-menu li a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 1.7;
+  font-size: 20px;
+}
+
+.burger_menu_submenu {
+  display: none;
+  padding-left: 15px;
+}
+.burger_menu_submenu.active {
+  display: block;
+  overflow-y: scroll;
 }
