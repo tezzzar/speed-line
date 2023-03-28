@@ -27,7 +27,7 @@
 }
 @media (max-width: 425px) {
   #search-container_input {
-    width: 15em !important;
+    width: 17em;
   }
   .slider_button {
     font-family: "PT Sans";
@@ -87,6 +87,15 @@
   header {
     height: 110px;
   }
+  .info_news {
+    flex-wrap: wrap;
+    .col-5 {
+      width: 100%;
+    }
+    .info_block_photo {
+      min-height: 247px;
+    }
+  }
   .search-container {
     top: 5px;
   }
@@ -120,6 +129,12 @@
 @media (min-width: 769px) and (max-width: 1024px) {
   header {
     height: 140px;
+  }
+  .info_news {
+    flex-wrap: wrap;
+    .col-5 {
+      width: 48%;
+    }
   }
 }
 @media (max-width: 1024px) {
@@ -255,7 +270,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .site_footer {
     .col-3 {
       width: 100%;
@@ -265,7 +280,19 @@
       margin-left: 40px;
     }
     .site_footer_social {
-      margin-left: 40px;
+      order: 3;
+      display: flex;
+      flex-direction: column;
+      .footer_mail_button {
+        order: 2;
+        margin-top: 30px;
+      }
+      p {
+        padding: 15px 0 20px 40px;
+      }
+      .social_icons {
+        padding-left: 30px;
+      }
     }
   }
 }
@@ -288,5 +315,68 @@
   }
   .topbar__nav {
     padding: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  // .header-fav,
+  // .header-compare {
+  //   display: none;
+  // }
+  // .topbar__phones {
+  //   width: 100%;
+  //   display: inline-flex;
+  //   text-align: end;
+  //   justify-content: space-around;
+  //   a {
+  //     font-size: small;
+  //     margin-left: 10px;
+  //   }
+  // }
+  .logo {
+    background-size: contain;
+    height: 55px;
+    min-width: 160px;
+  }
+  .header-icons {
+    min-width: 100px;
+    gap: 5px;
+  }
+  #search-container_input {
+    width: 12em;
+  }
+}
+@media (max-width: 425px) {
+  // .header-fav,
+  // .header-compare {
+  //   display: none;
+  // }
+  .topbar__phones {
+    width: 100%;
+    display: inline-flex;
+    text-align: end;
+    justify-content: space-around;
+    a {
+      font-size: small;
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  #search-container_input {
+    width: 16em;
+  }
+}
+
+@media (max-width: 400px) {
+  #search-container_input {
+    width: 15em;
+  }
+}
+
+@media (max-width: 360px) {
+  #search-container_input {
+    width: 12em;
   }
 }

@@ -85,7 +85,7 @@ header {
 
 .user-office_img_big {
   background: url(../img/usericon_white_big.png) center no-repeat;
-  background-size: cover;
+  background-size: contain;
   width: 33px;
   height: 33px;
   display: none;
@@ -236,12 +236,14 @@ header {
   margin-top: 30px;
   justify-content: space-evenly;
   min-width: 140px;
+  gap: 5px;
 }
 
 .header-fav {
   width: 33px;
   height: 33px;
   background: url(../img/fav-ico.svg) left center no-repeat;
+  background-size: contain;
 }
 
 .header-compare {
@@ -996,6 +998,8 @@ nav {
 .info_news {
   display: flex;
   gap: 30px;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 .info_block_photo {

@@ -47,14 +47,19 @@ $(document).ready(function () {
     // responsiveBaseElement: "main",
     responsive: {
       0: {
+        items: 1,
+        nav: false,
+        dots: false,
+      },
+      600: {
         items: 2,
-        nav: true,
+        nav: false,
         dots: false,
       },
       768: {
         items: 3,
-        nav: true,
-        dots: true,
+        nav: false,
+        dots: false,
       },
       1024: {
         items: 4,
