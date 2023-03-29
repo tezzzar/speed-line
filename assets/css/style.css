@@ -95,21 +95,22 @@ header {
   background: url(../img/logo.png) left center no-repeat;
   height: 60px;
   min-width: 200px;
-  margin-top: 20px;
+  margin-top: 16px;
 }
 
 .search-container {
   top: -74px;
-  right: -321px;
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
   position: relative;
-  align-items: flex-start;
+  flex-direction: row;
+  margin-left: 50px;
 }
 
 #toggle {
   display: flex;
+  height: 42px;
 }
 
 .site-header {
@@ -123,7 +124,7 @@ header {
   border: none;
   background-color: #29717d;
   color: #90c1c6;
-  height: 45px;
+  height: 42px;
   z-index: 10;
   display: flex;
   flex-wrap: nowrap;
@@ -132,7 +133,7 @@ header {
 .menu-sort a {
   text-decoration: none;
   color: #90c1c6;
-  padding: 12px 10px;
+  padding: 10px 10px;
   white-space: nowrap;
 }
 .menu-sort .arrow {
@@ -204,7 +205,7 @@ header {
   border: none;
   background-color: #05535d;
   color: #bdcacc;
-  height: 45px;
+  height: 42px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -216,15 +217,14 @@ header {
 }
 
 #search-button_submit {
-  height: 45px;
-  width: 45px;
+  height: 42px;
+  width: 42px;
   border: none;
   background: url(../img/search-button_small.svg) center center no-repeat;
   background-color: #05535d;
   position: relative;
   z-index: 50;
-  right: 50px;
-  padding: 0 25px;
+  right: 5px;
 }
 
 .input button[type=submit]:hover {
@@ -274,6 +274,8 @@ nav {
   height: 54px;
   position: relative;
   bottom: 45px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .site-nav a {
   color: white;
@@ -1273,6 +1275,8 @@ footer {
   z-index: 30;
   overflow: hidden;
   display: none;
+  left: 6px;
+  top: 1px;
 }
 
 .menu-btn span {
